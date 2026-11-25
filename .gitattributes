@@ -1,0 +1,8 @@
+# 二进制文件，禁止任何换行符转换
+spider/fan.txt binary
+
+# 文本与配置文件统一使用 LF，防止 CRLF 改变校验和
+*.json text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=lf
