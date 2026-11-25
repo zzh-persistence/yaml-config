@@ -13,10 +13,30 @@
 
 | 文件 | 说明 |
 |---|---|
-| `0/0.json` | 订阅配置本体。站点/直播源字段与原始文件一致，仅 `spider` 字段被替换（见下） |
+| `0/0.json` | 订阅配置本体。站点/直播源字段保留，外部静态资源引用已改为本仓库地址（见下） |
 | `spider/fan.txt` | 同源 spider JAR，1,376,462 字节，MD5 `0ce2eae734b7eff47763f3f9e1d8525b` |
-| `backup/0.original.json` | 原始配置备份，`spider` 仍指向失效的 Zoho 链接 |
-| `deploy.sh` | 一键创建仓库、推送、开启 Pages 的脚本 |
+| `assets/` | 10 个静态资源本地副本（drpy2 引擎 ×2、jp.js、兔小贝.js、5 个 Bili 分类 JSON），详见下节 |
+| `backup/0.original.json` | 原始配置备份，所有链接保持原样 |
+| `deploy.sh` / `deploy.ps1` | 一键创建仓库、推送、开启 Pages 的脚本 |
+
+## 静态资源自托管
+
+配置中原有 10 个外部静态资源引用（经 `ghp.ci` 代理的 GitHub raw、GitLab raw）已全部改为本仓库 `assets/` 下的地址：
+
+| 本地文件 | 原来源 | 字节数 |
+|---|---|---|
+| `assets/drpy2_ghp.js` | fantaiying7/EXT `drpy2.min.js` | 67,381 |
+| `assets/drpy2_gitlab.js` | GitLab fantaiying/ext `drpy2.min.js` | 67,381 |
+| `assets/jp.js` | GitLab fantaiying/ext `jp.js` | 8,437 |
+| `assets/bilibili.json` | fantaiying7/EXT `bilibili.json` | 47,957 |
+| `assets/biliych.json` | fantaiying7/EXT `biliych.json` | 8,484 |
+| `assets/tuxiaobei.js` | fantaiying7/EXT `兔小贝.js` | 1,009 |
+| `assets/child_edu.json` | fantaiying7/EXT `少儿教育.json` | 3,714 |
+| `assets/primary_school.json` | fantaiying7/EXT `小学课堂.json` | 9,659 |
+| `assets/middle_school.json` | fantaiying7/EXT `初中课堂.json` | 31,796 |
+| `assets/high_school.json` | fantaiying7/EXT `高中课堂.json` | 32,078 |
+
+**未改动**：3 条直播源列表（`itvlist.txt`、`ipv6.m3u`、`tv.m3u`）、EPG、台标、第三方 API 站点、本地代理地址——这些是动态数据或接口，本地化会失去更新能力或无意义。
 
 ## 使用地址（独立仓库 + Pages）
 

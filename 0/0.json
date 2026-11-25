@@ -48,8 +48,8 @@
             "quickSearch": 1,
             "changeable": 1,
             "playerType": "1",
-            "api": "https://gitlab.com/fantaiying/ext/-/raw/main/drpy2.min.js",
-            "ext": "https://gitlab.com/fantaiying/ext/-/raw/main/jp.js"
+            "api": "https://zzh-persistence.github.io/yaml-config/assets/drpy2_gitlab.js",
+            "ext": "https://zzh-persistence.github.io/yaml-config/assets/jp.js"
         },
         {
             "key": "文采",
@@ -549,7 +549,7 @@
             "quickSearch": 0,
             "changeable": 0,
             "ext": {
-                "json": "https://ghp.ci/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/bilibili.json"
+                "json": "https://zzh-persistence.github.io/yaml-config/assets/bilibili.json"
             }
         },
         {
@@ -565,15 +565,15 @@
             "quickSearch": 0,
             "changeable": 0,
             "ext": {
-                "json": "https://ghp.ci/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/biliych.json"
+                "json": "https://zzh-persistence.github.io/yaml-config/assets/biliych.json"
             }
         },
         {
             "key": "dr_兔小贝",
             "name": "儿童┃启蒙",
             "type": 3,
-            "api": "https://ghp.ci/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-            "ext": "https://ghp.ci/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/%E5%85%94%E5%B0%8F%E8%B4%9D.js",
+            "api": "https://zzh-persistence.github.io/yaml-config/assets/drpy2_ghp.js",
+            "ext": "https://zzh-persistence.github.io/yaml-config/assets/tuxiaobei.js",
             "style": {
                 "type": "rect",
                 "ratio": 1.597
@@ -595,7 +595,7 @@
             "quickSearch": 0,
             "changeable": 0,
             "ext": {
-                "json": "https://ghp.ci/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/少儿教育.json"
+                "json": "https://zzh-persistence.github.io/yaml-config/assets/child_edu.json"
             }
         },
         {
@@ -611,7 +611,7 @@
             "quickSearch": 0,
             "changeable": 0,
             "ext": {
-                "json": "https://ghp.ci/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/小学课堂.json"
+                "json": "https://zzh-persistence.github.io/yaml-config/assets/primary_school.json"
             }
         },
         {
@@ -627,7 +627,7 @@
             "quickSearch": 0,
             "changeable": 0,
             "ext": {
-                "json": "https://ghp.ci/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/初中课堂.json"
+                "json": "https://zzh-persistence.github.io/yaml-config/assets/middle_school.json"
             }
         },
         {
@@ -643,7 +643,7 @@
             "quickSearch": 0,
             "changeable": 0,
             "ext": {
-                "json": "https://ghp.ci/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/高中课堂.json"
+                "json": "https://zzh-persistence.github.io/yaml-config/assets/high_school.json"
             }
         }
     ]
